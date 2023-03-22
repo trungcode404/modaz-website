@@ -6,6 +6,11 @@
     color: #6e6e6e;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+}
+
 .container {
     padding: 0 15px !important;
 
@@ -330,12 +335,18 @@
         font-size: 14px;
         line-height: 30px;
         color: #333;
+
+        @media only screen and (max-width: 991px) {
+            & {
+                margin-bottom: 14px!important;
+            }
+        }
     }
+
+
     
     ul {
         margin: 0;
-        padding: 0;
-        list-style: none;
 
         a, span {
             line-height: 30px;

@@ -1,0 +1,17 @@
+.products-list-container {
+  margin-bottom: 13px;
+}
+.products-list-content {
+  width: 100%;
+}
+
+.product {
+  margin-bottom: 33px;
+  border-right: 1px solid #efefef;
+  text-align: center;
+  float: left;
+}
+.product:hover {
+  box-shadow: 0 5px 19px 1px rgba(36, 11, 12, 0.15);
+  z-index: 5;
+}/*# sourceMappingURL=Product.css.map */

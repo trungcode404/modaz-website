@@ -10,93 +10,89 @@
     <link rel="icon" href="http://themesflat.com/html/modaz/icon/favicon.png" />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./Product.css" />
     <link rel="stylesheet" href="./Shop.css" />
-
-    <style>
-      .product {
-        content: "\f002";
-        font-family: fontawesome;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-    </style>
   </head>
   <body>
-    <div class="main-body">
-      <!-- Header -->
-      <div>
-        <header class="navbar" style="height: 90px">This is the header</header>
-      </div>
-      <!-- Page title -->
-      <div class="page-title">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="page-title-wrapper">
-                <div class="title"><h1>Shop</h1></div>
-                <div class="custom-breadcrumb">
-                  <ul style="padding: 0; list-style: none; margin: 0">
-                    <li class="custom-breadcrumb-list-item">
-                      <a href="#" class="custom-breadcrumb-item">Home</a>
-                    </li>
-                    <li class="custom-breadcrumb-list-item">
-                      <a href="#" class="custom-breadcrumb-item">Shop</a>
-                    </li>
-                    <li class="custom-breadcrumb-list-item">
-                      <a href="#" class="custom-breadcrumb-item"
-                        >Fullwidth Shop</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+    <!-- Header -->
+    <div>
+      <header class="navbar" style="height: 90px">This is the header</header>
+    </div>
+    <!-- Page title -->
+    <div class="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="page-title-wrapper">
+              <div class="title"><h1>Shop</h1></div>
+              <div class="custom-breadcrumb">
+                <ul style="padding: 0; list-style: none; margin: 0">
+                  <li class="custom-breadcrumb-list-item">
+                    <a href="#" class="custom-breadcrumb-item">Home</a>
+                  </li>
+                  <li class="custom-breadcrumb-list-item">
+                    <a href="#" class="custom-breadcrumb-item">Shop</a>
+                  </li>
+                  <li class="custom-breadcrumb-list-item">
+                    <a href="#" class="custom-breadcrumb-item"
+                      >Fullwidth Shop</a
+                    >
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Main content -->
-      <section class="main-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="support-section">
-                <div class="product-showing-number">
-                  <p>Showing 1–12 of 56 Products</p>
-                </div>
-
-                <ul class="product-filter-search">
-                  <li class="product-filter-fuction">
-                    <a
-                      href="#filterCollapse"
-                      class="filter-options-show"
-                      data-toggle="collapse"
-                      >Filters</a
-                    >
-                  </li>
-                  <li class="product-search-function">
-                    <a
-                      href="#searchCollapse"
-                      class="search-bar-control search-bar-show filter-options-show"
-                      id="search-bar-control"
-                      data-toggle="collapse"
-                      onclick="changeSearchIcon()"
-                      >Search</a
-                    >
-                  </li>
-                </ul>
+    </div>
+    <!-- Main content -->
+    <section class="main-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Support display -->
+            <div class="support-section">
+              <div class="product-showing-number">
+                <p>Showing 1–12 of 56 Products</p>
               </div>
-              <!-- Product filter -->
-              <div class="collapse" id="filterCollapse">
-                <div class="filter-container">
-                  <div class="filter-container-close-btn">
-                    <a
-                      href="#filterCollapse"
-                      class="filter-options-show"
-                      data-toggle="collapse"
-                      ><i class="fa fa-times"></i
-                    ></a>
-                  </div>
+
+              <ul class="product-filter-search">
+                <li class="product-filter-fuction">
+                  <a
+                    href="#filterCollapse"
+                    class="filter-options-show"
+                    data-toggle="collapse"
+                    >Filters</a
+                  >
+                </li>
+                <li class="product-search-function">
+                  <a
+                    href="#searchCollapse"
+                    class="search-bar-control search-bar-show filter-options-show"
+                    id="search-bar-control"
+                    data-toggle="collapse"
+                    onclick="changeSearchIcon()"
+                    >Search</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Product filter -->
+            <!-- Add 'clearfix' class to wrap elements using float -->
+            <div
+              class="collapse clearfix"
+              id="filterCollapse"
+            >
+              <div class="filter-container">
+                <div class="filter-container-close-btn">
+                  <a
+                    href="#filterCollapse"
+                    class="filter-options-show"
+                    data-toggle="collapse"
+                    ><i class="fa fa-times"></i
+                  ></a>
+                </div>
+                <div>
                   <div class="widget widget-sort-by">
                     <h5 class="widget-title">Sort By</h5>
                     <ul>
@@ -174,32 +170,39 @@
                   </div>
                 </div>
               </div>
-              <!-- Product search -->
-              <div class="collapse" id="searchCollapse">
-                <div class="search-container">
-                  <form
-                    role="search"
-                    method="get"
-                    class="search-form"
-                    action="#"
-                  >
-                    <label>
-                      <input
-                        type="search"
-                        class="search-field"
-                        placeholder="Searching …"
-                        value=""
-                        name="s"
-                      />
-                    </label>
-                  </form>
-                </div>
+            </div>
+            <!-- Product search -->
+            <div
+              class="collapse"
+              id="searchCollapse"
+            >
+              <div class="search-container">
+                <form role="search" method="get" class="search-form" action="#">
+                  <label>
+                    <input
+                      type="search"
+                      class="search-field"
+                      placeholder="Searching …"
+                      value=""
+                      name="s"
+                    />
+                  </label>
+                </form>
+              </div>
+            </div>
+            <!-- Product show -->
+            <div
+              class="products-list-container col-sm-12"
+              style="border: 1px solid red"
+            >
+              <div class="products-list-content">
+                <div class="product">Product</div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </body>
 
   <script>

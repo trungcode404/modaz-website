@@ -5,6 +5,11 @@
   color: #6e6e6e;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .container {
   padding: 0 15px !important;
 }
@@ -248,10 +253,13 @@
   line-height: 30px;
   color: #333;
 }
+@media only screen and (max-width: 991px) {
+  .widget-title {
+    margin-bottom: 14px !important;
+  }
+}
 .widget ul {
   margin: 0;
-  padding: 0;
-  list-style: none;
 }
 .widget ul a, .widget ul span {
   line-height: 30px;
