@@ -1074,7 +1074,176 @@ label {
 .product .product-item .product-thumb, .product .product-item .product-info {
   position: relative;
 }
-
+.product.style2 .product-item .product-info {
+  padding: 0 35px 40px;
+}
+.product.style2 .product-item .product-info {
+  margin-top: -11px;
+}
+.product .product-item .product-info {
+  padding: 0 35px 35px;
+}
+.product.style2 .product-item .product-title {
+  font-size: 16px;
+}
+.product .product-item .product-title {
+  font-size: 15px;
+  line-height: 27px;
+  color: #333;
+  font-weight: 500;
+}
+.product .product-item .price ins {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #f63440;
+  text-decoration: none;
+}
+.flat-color-list {
+  margin-top: 2px;
+}
+ol ol, ul ul, ol ul, ul ol {
+  margin-bottom: 0;
+}
+.flat-color-list li {
+  display: inline-block;
+  margin: 0 4px;
+}
+.flat-color-list li a.red {
+  background-color: #ee1313;
+}
+.flat-color-list li a.red:before {
+  border-color: #ee1313;
+}
+.flat-color-list li a:before, .flat-color-list li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: scale(1);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  z-index: -1;
+}
+.product .product-item .add-to-cart {
+  background: #f63440;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(0px,10px);
+  -moz-transform: translate(0px,10px);
+  -ms-transform: translate(0px,10px);
+  -o-transform: translate(0px,10px);
+  transform: translate(0px,10px);
+}
+.product.style2 .product-item .add-to-cart a {
+  line-height: 46px;
+}
+.product .product-item .add-to-cart a {
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+}
+.product.style2 .product-item .like {
+  font-size: 14px;
+  line-height: 26px;
+  top: 20px;
+}
+.fa-heart-o:before {
+  content: "\f08a";
+}
+a {
+  color: #333;
+  text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.product .product-item .like {
+  font-size: 18px;
+  line-height: 35px;
+  position: absolute;
+  top: 27px;
+  right: 22px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-transform: translate(30px,0px);
+  -moz-transform: translate(30px,0px);
+  -ms-transform: translate(30px,0px);
+  -o-transform: translate(30px,0px);
+  transform: translate(30px,0px);
+}
+.product.style2 .product-item .product-thumb {
+  padding: 50px 0 0;
+}
+.product .product-item .product-thumb {
+  padding: 68px 0 57px;
+}
+.product .product-item .product-thumb, .product .product-item .product-info {
+  position: relative;
+}
+.product.style2 .product-item .new {
+  font-size: 14px;
+  line-height: 26px;
+  width: 65px;
+  top: 20px;
+  left: 20px;
+}
+.product .product-item .new {
+  font-size: 18px;
+  line-height: 35px;
+  width: 87px;
+  text-align: center;
+  background-color: #7cc576;
+  color: #fff;
+  display: block;
+  position: absolute;
+  top: 27px;
+  left: 25px;
+}
+.product.style2 .product-item .product-title {
+  font-size: 16px;
+}
+.product.style2 .product-item .new {
+  font-size: 14px;
+  line-height: 26px;
+  width: 65px;
+  top: 20px;
+  left: 20px;
+}
+.product .product-item .sale {
+  background-color: #f63440;
+}
+.product .product-item .price del {
+  font-size: 16px;
+  line-height: 36px;
+  color: #c5c5c5;
+  font-weight: 100;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
