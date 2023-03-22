@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    
+}
+
+body{
+    font: 14px/26px "Poppins",sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    color: #6e6e6e;
+    
+
+}
+.header {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    box-shadow: 0 5px 14.25px 0.75px rgba(36,11,12,.05);
+    z-index: 99;
+}
+#header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+}
+.mail-chimp {
+    background: #f5f5f5;
+    width: 100%;
+    height: 109px;
+    
+}
+.flat-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 87px 0 63px 0;
+    overflow: hidden;
+    
+}
+.footer{
+    width: 1438px;
+    height: 316px;
+}
+    
+    
+.menu{
+    width: 1438px;
+    height: 89px;
+    background-color: aqua;
+}
+.parallax2 {
+    background-image: url(
+        ../Coming-soon/image/bg-parallax2.jpg
+    );
+
+}
+.flat-row.flat-coming-soon {
+    padding: 218px 0 212px;
+}
+.parallax {
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+}
+.flat-row {
+    clear: both;
+    display: block;
+    padding: 87px 0 63px 0;
+    overflow: hidden;
+}
+.parallax .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+}
+.flat-row.flat-coming-soon {
+    padding: 218px 0 212px;
+}
+
+.wrap-coming-soon .header-coming-soon h2.sup-title {
+    line-height: 58px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 58px;
+    font-weight: 500;
+}
+.wrap-coming-soon .header-coming-soon .title {
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 500;
+}
+/* ajust countdown */
+.countdown .square {
+    display: inline-block;
+}
+.countdown .square .numb {
+    font-size: 48px;
+    line-height: 90px;
+    font-weight: 500;
+    color: #333;
+    width: 90px;
+    height: 90px;
+    background: rgba(255,255,255,.9);
+    text-align: center;
+    margin: 0 35px 18px;
+}
+.countdown .square .text {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.flat-button button {
+    margin: 0 9px;
+}
+.flat-button{
+    padding: 50px;
+}
+.flat-button .btn-light{
+    background: white;
+    color: red;
+    border-radius: inherit;
+    width: 165px;
+    height: 44px;
+    border: none;
+    background: linear-gradient(to right, rgba(45, 39, 39, 0.896) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+
+
+}
+
+.flat-button .btn-light:hover{
+    background-position: left bottom;
+    color: #fff;
+
+}
+.flat-button .btn-danger{
+    border-radius: inherit;
+    width: 196;
+    height: 46px;
+    border: none;
+    background: linear-gradient(to right, rgba(45, 39, 39, 0.896) 50%, #f63440 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .2s ease-out;
+}
+.flat-button .btn-danger:hover{
+    background-position: left bottom;
+    color: #fff;
+}
+.all-nd{
+    padding: 70px;
+}
+.coming-soon{
+    max-width: 100%;
+    background-color: #333;
+
+}
+
+/* @media(min-width: 1200px) {
+    .container {
+      width: 1200px;
+      max-width: 100%;
+    }
+
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+
+  }
+  @media(min-width: 1200px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
+  @media(min-width: 992px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+  }
+  @media(min-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+  }
+  @media(min-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+  }
+  @media only screen and (max-width: 991px) {
+    .flat-row {
+      padding: 35px 0! important;
+    }
+  } */
+  
