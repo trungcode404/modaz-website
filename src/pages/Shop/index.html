@@ -11,32 +11,212 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./Shop.css" />
+
+    <style>
+      .product {
+        content: "\f002";
+        font-family: fontawesome;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    </style>
   </head>
   <body>
     <div class="main-body">
-        <div>
-            <header class="navbar">This is the header</header>
-          </div>
-          <div class="page-title">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-sm-12">
-                          <div class="page-title-wrapper">
-                              <div class="title"><h1>Shop</h1></div>
-                              <div class="custom-breadcrumb">
-                                  <ul style="padding: 0; list-style: none; margin: 0;">
-                                      <li class="custom-breadcrumb-item"><a href="#">Home</a></li>
-                                      <li class="custom-breadcrumb-item"><a href="#">Shop</a></li>
-                                      <li class="custom-breadcrumb-item"><a href="#">Fullwidth Shop</a></li>
-                                  </ul>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+      <!-- Header -->
+      <div>
+        <header class="navbar" style="height: 90px">This is the header</header>
+      </div>
+      <!-- Page title -->
+      <div class="page-title">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="page-title-wrapper">
+                <div class="title"><h1>Shop</h1></div>
+                <div class="custom-breadcrumb">
+                  <ul style="padding: 0; list-style: none; margin: 0">
+                    <li class="custom-breadcrumb-list-item">
+                      <a href="#" class="custom-breadcrumb-item">Home</a>
+                    </li>
+                    <li class="custom-breadcrumb-list-item">
+                      <a href="#" class="custom-breadcrumb-item">Shop</a>
+                    </li>
+                    <li class="custom-breadcrumb-list-item">
+                      <a href="#" class="custom-breadcrumb-item"
+                        >Fullwidth Shop</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <!-- Main content -->
+      <section class="main-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="support-section">
+                <div class="product-showing-number">
+                  <p>Showing 1–12 of 56 Products</p>
+                </div>
+
+                <ul class="product-filter-search">
+                  <li class="product-filter-fuction">
+                    <a
+                      href="#filterCollapse"
+                      class="filter-options-show"
+                      data-toggle="collapse"
+                      >Filters</a
+                    >
+                  </li>
+                  <li class="product-search-function">
+                    <a
+                      href="#searchCollapse"
+                      class="search-bar-control search-bar-show filter-options-show"
+                      id="search-bar-control"
+                      data-toggle="collapse"
+                      onclick="changeSearchIcon()"
+                      >Search</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- Product filter -->
+              <div class="collapse" id="filterCollapse">
+                <div class="filter-container">
+                  <div class="filter-container-close-btn">
+                    <a
+                      href="#filterCollapse"
+                      class="filter-options-show"
+                      data-toggle="collapse"
+                      ><i class="fa fa-times"></i
+                    ></a>
+                  </div>
+                  <div class="widget widget-sort-by">
+                    <h5 class="widget-title">Sort By</h5>
+                    <ul>
+                      <li><a href="#" class="active">Default</a></li>
+                      <li><a href="#">Popularity</a></li>
+                      <li><a href="#">Average rating</a></li>
+                      <li><a href="#">Newness</a></li>
+                      <li><a href="#">Price: low to high</a></li>
+                      <li><a href="#">Price: high to low</a></li>
+                    </ul>
+                  </div>
+                  <div class="widget widget-price">
+                    <h5 class="widget-title">Price</h5>
+                    <ul>
+                      <li><a href="#" class="active">$0.00 - $50.00</a></li>
+                      <li><a href="#">$50.00 - $100.00</a></li>
+                      <li><a href="#">$100.00 - $150.00</a></li>
+                      <li><a href="#">$150.00 - $200.00</a></li>
+                      <li><a href="#">$200.00 - 250.00</a></li>
+                      <li><a href="#">250.00+</a></li>
+                    </ul>
+                  </div>
+                  <div class="widget widget-color">
+                    <h5 class="widget-title">Colors</h5>
+                    <ul class="colors-list">
+                      <li>
+                        <a href="#" class="color-icon-yellow"></a
+                        ><span>Yellow</span>
+                      </li>
+                      <li>
+                        <a href="#" class="color-icon-pink"> </a
+                        ><span>White</span>
+                      </li>
+                      <li>
+                        <a href="#" class="color-icon-red active"></a
+                        ><span>Red</span>
+                      </li>
+                      <li>
+                        <a href="#" class="color-icon-black"></a
+                        ><span>Black</span>
+                      </li>
+                      <li>
+                        <a href="#" class="color-icon-green"></a
+                        ><span>Green</span>
+                      </li>
+                      <li>
+                        <a href="#" class="color-icon-khaki"></a
+                        ><span>Orange</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="widget widget-size">
+                    <h5 class="widget-title">Size</h5>
+                    <ul>
+                      <li><a href="#">L</a></li>
+                      <li><a href="#">M</a></li>
+                      <li><a href="#">S</a></li>
+                      <li><a href="#">XL</a></li>
+                      <li><a href="#">XXL</a></li>
+                      <li><a href="#">Over Size</a></li>
+                    </ul>
+                  </div>
+                  <div class="widget widget-tag">
+                    <h5 class="widget-title">Tags</h5>
+                    <div class="tag-list">
+                      <a href="#">All products</a>
+                      <a href="#" class="active">Bags</a>
+                      <a href="#">Chair</a>
+                      <a href="#">Decoration</a>
+                      <a href="#">Fashion</a>
+                      <a href="#">Tie</a>
+                      <a href="#">Furniture</a>
+                      <a href="#">Accesories</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Product search -->
+              <div class="collapse" id="searchCollapse">
+                <div class="search-container">
+                  <form
+                    role="search"
+                    method="get"
+                    class="search-form"
+                    action="#"
+                  >
+                    <label>
+                      <input
+                        type="search"
+                        class="search-field"
+                        placeholder="Searching …"
+                        value=""
+                        name="s"
+                      />
+                    </label>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
+
+  <script>
+    function changeSearchIcon() {
+      const modified_element = document.getElementById("search-bar-control");
+      let modified_element_class_list = modified_element.classList;
+      modified_element_class_list.contains("search-bar-show")
+        ? modified_element_class_list.replace(
+            "search-bar-show",
+            "search-bar-hide"
+          )
+        : modified_element_class_list.replace(
+            "search-bar-hide",
+            "search-bar-show"
+          );
+    }
+  </script>
 
   <!-- Booststrap 4 -->
   <link
@@ -55,4 +235,9 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"
   ></script>
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
 </html>
