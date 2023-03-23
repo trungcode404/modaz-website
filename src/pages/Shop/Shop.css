@@ -70,7 +70,7 @@ ul {
   position: absolute;
   font-weight: 300;
   font-size: 13px;
-  top: 0;
+  top: 4px;
   right: -12px;
 }
 .page-title .custom-breadcrumb-item {
@@ -162,6 +162,7 @@ ul {
   top: 0;
   right: 0;
 }
+
 .filter-container {
   display: block !important;
   border-top: 1px solid #e5e5e5;
@@ -204,12 +205,21 @@ ul {
 .widget-sort-by {
   width: 23%;
 }
+.widget-sort-by a:hover {
+  color: #333;
+}
 .widget-price {
   width: 19.6%;
+}
+.widget-price a:hover {
+  color: #333;
 }
 .widget-color {
   width: 19.8%;
   padding-bottom: 39px;
+}
+.widget-color a:hover {
+  color: #333;
 }
 .widget-size {
   width: 14.5%;

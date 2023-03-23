@@ -87,7 +87,7 @@ ul {
                     font-weight: 300;
                     font-size: 13px;
 
-                    top: 0;
+                    top: 4px;
                     right: -12px;
                 }
             }
@@ -211,10 +211,6 @@ ul {
             top: 0;
             right: 0;
         }
-
-        &-function {
-            //
-        }
     }
 }
 
@@ -268,15 +264,30 @@ ul {
 
     &-sort-by {
         width: 23%;
+        a {
+            &:hover {
+                color: #333;
+            }
+        }
     }
 
     &-price {
         width: 19.6%;
+        a {
+            &:hover {
+                color: #333;
+            }
+        }
     }
 
     &-color {
         width: 19.8%;
         padding-bottom: 39px;
+        a {
+            &:hover {
+                color: #333;
+            }
+        }
     }
 
     &-size {
@@ -296,11 +307,14 @@ ul {
         .tag-list {
             a {
                 display: inline-block;
+
                 color: #6e6e6e;
                 line-height: 29px;
                 text-align: center;
                 font-weight: 300;
+                
                 background-color: #eee;
+
                 padding: 0 17px;
                 margin: 0 8px 12px 0;
                 
@@ -377,7 +391,7 @@ ul {
 
         &{
             &.color-icon {
-                
+
                 &-yellow::before {
                     border: 2px solid #faed34;
                 }
