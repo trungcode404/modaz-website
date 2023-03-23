@@ -268,13 +268,57 @@ ul {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  position: relative;
+}
+.colors-list a::before, .colors-list a::after {
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.colors-list a::after {
+  border: 2px solid #fff;
+}
+.colors-list a.color-icon-yellow::before {
+  border: 2px solid #faed34;
+}
+.colors-list a.color-icon-pink::before {
+  border: 2px solid #f5eaea;
+}
+.colors-list a.color-icon-red::before {
+  border: 2px solid #ee1313;
+}
+.colors-list a.color-icon-black::before {
+  border: 2px solid #000;
+}
+.colors-list a.color-icon-green::before {
+  border: 2px solid #7cc576;
+}
+.colors-list a.color-icon-khaki::before {
+  border: 2px solid #cfc300;
+}
+.colors-list a:hover::before, .colors-list a:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.colors-list a:hover::after {
+  transform: scale(1.25);
+}
+.colors-list a:hover::before {
+  transform: scale(1.5);
 }
 .colors-list span {
   display: inline-block;
   padding-left: 24px;
-  color: #333;
+  color: #333 !important;
+  font-weight: 300;
 }
-.colors-list span:hover {
+.colors-list li:hover span {
   font-weight: 500;
 }
 
