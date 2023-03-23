@@ -11,9 +11,8 @@ body{
     font-weight: 300;
     background-color: #fff;
     color: #6e6e6e;
-    
-
 }
+
 .header {
     width: 100%;
     height: 90px;
@@ -21,6 +20,7 @@ body{
     box-shadow: 0 5px 14.25px 0.75px rgba(36,11,12,.05);
     z-index: 99;
 }
+
 #header.is-fixed {
     position: fixed;
     top: 0;
@@ -29,12 +29,14 @@ body{
     z-index: 9999;
     background-color: #fff;
 }
+
 .mail-chimp {
     background: #f5f5f5;
     width: 100%;
     height: 109px;
     
 }
+
 .flat-row {
     clear: both;
     display: block;
@@ -43,37 +45,45 @@ body{
     overflow: hidden;
     
 }
+
 .footer{
     width: 1438px;
     height: 316px;
-}
-    
+}  
     
 .menu{
     width: 1438px;
     height: 89px;
     background-color: aqua;
 }
+
 .parallax2 {
     background-image: url(
         ../Coming-soon/image/bg-parallax2.jpg
-    );
+        );
 
 }
+
 .flat-row.flat-coming-soon {
     padding: 218px 0 212px;
 }
+
 .parallax {
     width: 100%;
-    background-attachment: fixed;
-    background-position: 50% 0;
+    background-attachment:fixed;
+    background-position-x: 50%;
+
+    position: relative;
 }
+
 .flat-row {
     clear: both;
     display: block;
+    position: relative;
     padding: 87px 0 63px 0;
     overflow: hidden;
 }
+
 .parallax .overlay {
     position: absolute;
     width: 100%;
@@ -102,6 +112,13 @@ body{
 .countdown .square {
     display: inline-block;
 }
+
+@media only screen and (max-width: 991px) {
+    .square {
+        margin-bottom: 55px;
+    }
+}
+
 .countdown .square .numb {
     font-size: 48px;
     line-height: 90px;
@@ -145,6 +162,7 @@ body{
     color: #fff;
 
 }
+
 .flat-button .btn-danger{
     border-radius: inherit;
     width: 196;
@@ -155,64 +173,17 @@ body{
     background-position: right bottom;
     transition: all .2s ease-out;
 }
+
 .flat-button .btn-danger:hover{
     background-position: left bottom;
     color: #fff;
 }
+
 .all-nd{
     padding: 70px;
 }
-.coming-soon{
-    max-width: 100%;
-    background-color: #333;
 
+.wrap-countdown {
+    margin-bottom: 55px;
 }
 
-/* @media(min-width: 1200px) {
-    .container {
-      width: 1200px;
-      max-width: 100%;
-    }
-
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-
-  }
-  @media(min-width: 1200px) {
-    .container {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-  }
-  @media(min-width: 992px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-  }
-  @media(min-width: 768px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-  }
-  @media(min-width: 576px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-  }
-  @media only screen and (max-width: 991px) {
-    .flat-row {
-      padding: 35px 0! important;
-    }
-  } */
-  

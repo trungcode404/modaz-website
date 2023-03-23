@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, caption, canvas, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, form, footer, header, hgroup, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, tt, table, tbody, textarea, tfoot, thead, time, tr, th, td, u, ul, var, video {
+    font-family: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: 0 0;
+}
+.boxed{
+    overflow: hidden;
+    position: relative;
+}
+.parallax1 {
+    background: url(../FAQ/image/bg-parallax1.jpg) no-repeat;
+}
+.parallax {
+    width: 100%;
+}
+.page-title {
+    position: relative;
+    padding: 76px 0 77px;
+    text-align: center;
+    font-size: 14px;
+}
+.page-title .page-title-heading .title {
+    margin-bottom: 23px;
+}
+/* h1 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #333;
+} */
+.breadcrumbs ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 9px 0 7px;
+}
+.breadcrumbs ul li a {
+    color: #6e6e6e;
+    font-weight: 400;
+}
+.breadcrumbs ul li:before {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -12px;
+}
+.breadcrumbs ul li:last-child:before {
+    content: "";
+    background-color: transparent;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    
+}
+.flat-row {
+    clear: both;
+    display: block;
+    position: relative;
+    padding: 87px 0 63px 0;
+    overflow: hidden;
+    
+}
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flat-title {
+    margin-bottom: 40px;
+}
+.flat-title h2 {
+    margin-top: 40px;
+}
+.flat-accordion .flat-toggle .toggle-title {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 15px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.flat-accordion .flat-toggle .toggle-content {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 14px;
+    font-size: 14px;
+    color:#6e6e6e;
+    line-height: 24px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+    
+}
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 1200px){
+.container {
+    max-width: 1200px !important;
+    width: 100%;
+}
+}
+@media only screen and (max-width: 768px) {
+    .container {
+      width: 720px;
+      margin-left: 12px;
+      
+    }
+  }
+  
