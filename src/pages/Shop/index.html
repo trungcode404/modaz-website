@@ -9,9 +9,36 @@
     <title>Modaz</title>
     <link rel="icon" href="http://themesflat.com/html/modaz/icon/favicon.png" />
 
+    <!-- Booststrap 4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./Product.css" />
     <link rel="stylesheet" href="./Shop.css" />
+
+    <!-- Get all products -->
+    <script type="text/javascript" src="./products.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -79,10 +106,7 @@
             </div>
             <!-- Product filter -->
             <!-- Add 'clearfix' class to wrap elements using float -->
-            <div
-              class="collapse clearfix"
-              id="filterCollapse"
-            >
+            <div class="collapse clearfix" id="filterCollapse">
               <div class="filter-container">
                 <div class="filter-container-close-btn">
                   <a
@@ -172,10 +196,7 @@
               </div>
             </div>
             <!-- Product search -->
-            <div
-              class="collapse"
-              id="searchCollapse"
-            >
+            <div class="collapse" id="searchCollapse">
               <div class="search-container">
                 <form role="search" method="get" class="search-form" action="#">
                   <label>
@@ -191,13 +212,22 @@
               </div>
             </div>
             <!-- Product show -->
-            <div
-              class="products-list-container col-sm-12"
-              style="border: 1px solid red"
-            >
-              <div class="products-list-content">
-                <div class="product">Product</div>
-              </div>
+            <div class="products-list-container clearfix">
+              <div class="products-list-content" id="products-list"></div>
+            </div>
+            <!-- Product pagination -->
+            <div class="product-pagination-section text-center clearfix">
+              <ul class="product-pagination">
+                <li class="prev">
+                  <a href="#"><i class="fa fa-angle-left"></i></a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li class="active"><a href="#" title="">2</a></li>
+                <li><a href="#">3</a></li>
+                <li>
+                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -219,28 +249,58 @@
             "search-bar-show"
           );
     }
-  </script>
 
-  <!-- Booststrap 4 -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-    crossorigin="anonymous"
-  />
-  <script
-    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"
-  ></script>
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    displayProductsList(products_list);
+
+    function displayProductsList(products_list) {
+      var products = "";
+      $.each(products_list, function (index) {
+        products += '<ul class="product-item col-lg-3 col-md-3 col-sm-6 col-xs-12">';
+
+        products += '<div class="product-photo clearfix">';
+        products += `<a href="#"><img src=${products_list[index].image} alt="product_image"/></a>`;
+        if (products_list[index].special) {
+          products += `<span class="product-special product-${products_list[index].special}">${products_list[index].special.charAt(0).toUpperCase() + products_list[index].special.slice(1)}</span>`;
+        };
+        products += "</div>";
+
+        products += '<div class="product-info clearfix">';
+        products += `<span class="product-name">${products_list[index].name}</span>`;
+        products += '<div class="product-price">';
+        if (products_list[index].old_price != "") {
+          products += `<del><span class="regular">${
+            "$" + products_list[index].old_price
+          }</span></del>`;
+        };
+        products += `<ins><span class="product-price-amount">${
+          "$" + products_list[index].current_price
+        }</span></ins>`;
+        products += "</div>";
+
+        if (products_list[index].multiple_colors) {
+          products += `<ul class="colors-list flat-list">
+                      <li><a href="#" class="color-icon-red"></a></li>
+                      <li><a href="#" class="color-icon-green"></a></li>
+                      <li><a href="#" class="color-icon-black"></a></li>
+                    </ul>`;
+        } 
+        else {
+          products += `<ul class="colors-list flat-list">
+                      <li><a href="#" class="color-icon-red icon-hidden"></a></li>
+                      <li><a href="#" class="color-icon-green icon-hidden"></a></li>
+                      <li><a href="#" class="color-icon-black icon-hidden"></a></li>
+                    </ul>`;
+        }
+
+        products += `</div>`;
+
+        products +=
+          '<div class="add-to-cart text-center"><a href="#">ADD TO CART</a></div>';
+        products +=
+          '<a href="#" class="like"><i class="fa fa-heart-o"></i></a>';
+        products += "</ul>";
+      });
+      $("#products-list").append(products);
+    }
+  </script>
 </html>

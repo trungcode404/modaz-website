@@ -10,6 +10,12 @@ ul {
   list-style: none;
 }
 
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
 .container {
   padding: 0 15px !important;
 }
@@ -205,20 +211,6 @@ ul {
   width: 19.8%;
   padding-bottom: 39px;
 }
-.widget-color .colors-list a {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-.widget-color .colors-list span {
-  display: inline-block;
-  padding-left: 24px;
-  color: #333;
-}
-.widget-color .colors-list span:hover {
-  font-weight: 500;
-}
 .widget-size {
   width: 14.5%;
   padding-bottom: 35px;
@@ -269,6 +261,21 @@ ul {
 }
 .widget ul .active {
   color: #333;
+}
+
+.colors-list a {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.colors-list span {
+  display: inline-block;
+  padding-left: 24px;
+  color: #333;
+}
+.colors-list span:hover {
+  font-weight: 500;
 }
 
 .color-icon-yellow {
