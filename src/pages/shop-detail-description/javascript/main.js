@@ -338,12 +338,12 @@
             }
         });
     };
-    var flexProduct = function() {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: "thumbnails"
-        });
-    };
+    // var flexProduct = function() {
+    //     $('.flexslider').flexslider({
+    //         animation: "slide",
+    //         controlNav: "thumbnails"
+    //     });
+    // };
     var quantityNumber = function() {
         $('.quantity-button').on('click', function() {
             var numberValue = $(this).parent().find('.quantity-number').val();
