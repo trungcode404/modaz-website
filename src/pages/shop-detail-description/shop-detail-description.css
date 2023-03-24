@@ -21,7 +21,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 *,
 *:before,
@@ -1557,20 +1556,20 @@ img {
   -ms-interpolation-mode: bicubic;
   vertical-align: middle;
 }
-/* @media (min-width: 1200px) {
+/* Responsive */
+@media (min-width: 1200px) {
   .container {
     width: 1200px;
     max-width: 100%;
   }
-} */
-/* @media (max-width: 900px) {
+} 
+ @media (max-width: 900px) {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px;
   }
-} */
+}
 
-/* Responsive */
 @media only screen and (max-width: 1199px) {
   .container {
     width: 1200px;
