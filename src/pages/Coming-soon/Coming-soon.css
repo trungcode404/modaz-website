@@ -47,10 +47,7 @@ body{
 }
 
 .parallax2 {
-    background-image: url(
-        ../Coming-soon/image/bg-parallax2.jpg
-        );
-
+    background-image: url("/modaz-website/assets/images/bg-parallax2.jpg");
 }
 
 .flat-row.flat-coming-soon {
