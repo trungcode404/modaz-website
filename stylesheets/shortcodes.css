@@ -1090,6 +1090,9 @@
 
 /* Add cart */
 .product .product-item .add-to-cart {
+	line-height:46px;
+	font-weight:700;
+	color:#fff;
 	background: #f63440;
 	position: absolute;
 	top: 100%;
