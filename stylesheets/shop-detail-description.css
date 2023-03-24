@@ -88,7 +88,7 @@ body {
 
 /* page title */
 .parallax1 {
-  background-image: url(../../../assets/images/bg-parallax1.jpg);
+  background-image: url('/modaz-website/assets/images/bg-parallax1.jpg');
 }
 
 .parallax {
