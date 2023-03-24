@@ -2,6 +2,11 @@ a {
   text-decoration: none;
 }
 
+.no-left-right-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .products-list-container {
   margin-bottom: 13px;
 }
@@ -82,6 +87,8 @@ a {
 }
 .product-photo {
   padding-top: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .product-info {
   padding: 0 35px 40px;

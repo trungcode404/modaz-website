@@ -189,7 +189,7 @@
                       <a href="#">Fashion</a>
                       <a href="#">Tie</a>
                       <a href="#">Furniture</a>
-                      <a href="#">Accesories</a>
+                      <a href="#">Accessories</a>
                     </div>
                   </div>
                 </div>
@@ -255,7 +255,7 @@
     function displayProductsList(products_list) {
       var products = "";
       $.each(products_list, function (index) {
-        products += '<ul class="product-item col-lg-3 col-md-3 col-sm-6 col-xs-12">';
+        products += '<ul class="product-item no-left-right-padding col-lg-3 col-md-3 col-sm-6 col-xs-12">';
 
         products += '<div class="product-photo clearfix">';
         products += `<a href="#"><img src=${products_list[index].image} alt="product_image"/></a>`;
