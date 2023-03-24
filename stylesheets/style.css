@@ -2663,6 +2663,12 @@ article .more-link a:hover:after {
   color: #f63440;
 }
 
+.bg-section.row-1 {
+	background: url('/modaz-website/assets/images/bg-parallax3.jpg') no-repeat center center ;
+	background-size: cover;
+}
+
+
 /* Go top
 ---------------------------------------------------------------*/
 .go-top {
