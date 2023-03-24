@@ -46,17 +46,6 @@ body{
     
 }
 
-.footer{
-    width: 1438px;
-    height: 316px;
-}  
-    
-.menu{
-    width: 1438px;
-    height: 89px;
-    background-color: aqua;
-}
-
 .parallax2 {
     background-image: url(
         ../Coming-soon/image/bg-parallax2.jpg

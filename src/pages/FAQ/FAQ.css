@@ -30,6 +30,10 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 .parallax1 {
     background: url(../FAQ/image/bg-parallax1.jpg) no-repeat;
+    background-position-x: 50%;
+    background-position-y: 70px;
+    background-attachment: fixed;
+
 }
 .parallax {
     width: 100%;
